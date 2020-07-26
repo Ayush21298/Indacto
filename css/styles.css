@@ -1,0 +1,1237 @@
+@font-face {
+    font-family: Raleway;
+    src: url("../vendor/fonts/Raleway/Raleway-Bold.ttf");
+}
+@font-face {
+    font-family: Pangram;
+    src: url("../vendor/fonts/Pangram/Pangram-Regular.otf");
+}
+@font-face {
+    font-family: Pangram-Light;
+    src: url("../vendor/fonts/Pangram/Pangram-Light.otf");
+}
+@font-face {
+    font-family: Pangram-Bold;
+    src: url("../vendor/fonts/Pangram/Pangram-Black.otf");
+}
+@font-face {
+    font-family: Pangram-ExtraLight;
+    src: url("../vendor/fonts/Pangram/Pangram-ExtraLight.otf");
+}
+@font-face {
+    font-family: ProductSans;
+    src: url("../vendor/fonts/ProductSans/ProductSans-Regular.ttf");
+}
+@font-face {
+    font-family: Gilroy;
+    src: url("../vendor/fonts/Gilroy/Gilroy-Light.otf")
+}
+@font-face {
+    font-family: Montserrat;
+    src: url("../vendor/fonts/Montserrat/Montserrat-Medium.ttf")
+}
+@font-face {
+    font-family: Helvetica;
+    src: url("../vendor/fonts/Helvetica/helvetica.ttf")
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+.container {
+    width: 99vw;
+}
+a {
+    text-decoration: none;
+}
+.slide-1 {
+    min-height: fit-content;
+    height: 100vh;
+    background-color: #000000;
+    color: #fff;
+}
+.slide-2 {
+    /* height: 164.65vh; */
+    padding-bottom: 20vh;
+    min-height: fit-content;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.slide-3 {
+    /* height: 164.65vh; */
+    padding-bottom: 20vh;
+    min-height: fit-content;
+    background-color: #000;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.slide-4 {
+    /* height: 107.9vh; */
+    padding-bottom: 20vh;
+    min-height: fit-content;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.slide-5 {
+    position: relative;
+    padding-bottom: 20vh;
+    /* height: 242.243vh; */
+    background-color: #000;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.slide-6 {
+    /* height: 114.6vh; */
+    padding-bottom: 10vh;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.slide-7 {
+    min-height: fit-content;
+    height: 89.328vh;
+    background-color: #000;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.nav-bar {
+    top: 0;
+    position: fixed;
+    height: 12.13vh;
+    border-bottom: #303030 0.05vw solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    text-align: center;
+    background-color: #000;
+    width: 100%;
+    z-index: 3;
+}
+.nav-item {
+    margin-top: 4.81vh;
+    font-family: Pangram-Light;
+    font-size: 1.25vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.03vw;
+    color: rgba(231, 231, 231, 0.7);
+}
+.nav-item-active {
+    color: #017afc;
+}
+/* .indicator-dot {
+    position: fixed;
+    height: 1px;
+    border: 3px solid #017afc;
+    left: 15vw;
+    border-radius: 3px;
+    margin-left: 7.08vw;
+    top: 12vh;
+    z-index: 4;
+} */
+.logo {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2.55vw;
+}
+.logo-text {
+    margin-left: 1vw;
+    font-family: Raleway;
+    font-size: 1.25vw;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+.home {
+    margin-left: 7.08vw;
+}
+.how-to {
+    margin-left: 5.2vw;
+}
+.values {
+    margin-left: 5.2vw;
+}
+.faq {
+    margin-left: 5.52vw;
+}
+.articles {
+    margin-left: 5.68vw;
+}
+.contact {
+    margin-left: 5.36vw;
+}
+.login {
+    margin-top: 3.7vh;
+    margin-left: 4.69vw;
+    width: 12.55vw;
+    height: 5.2vh;
+    border-radius: 2.60vw;
+    background-color: #5f26e1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.login-text {
+    font-family: ProductSans;
+    text-align: center;
+    font-size: 1.1vw;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #e7e7e7;
+}
+.title-container {
+    padding-top: 26vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title {
+    font-size: 5.2vw;
+    font-weight: 200;
+    font-family: Pangram-ExtraLight;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    text-align: center;
+}
+.title > span {
+    font-family: Pangram;
+}
+.phones {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -52vh;
+    display: flex;
+    position: relative;
+}
+/*Slide 1 Images*/
+.image-7 {
+    height: 84.53vh;
+    object-fit: scale-down;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 10vw;
+}
+.image-6 {
+    height: 48.33vh;
+    margin-left: 50%;
+    margin-top: 34vh;
+    position: absolute;
+}
+/*Slide 2*/
+.slide-2-content {
+    margin-top: 11.7vh;
+    margin-left: 6vw;
+}
+.content-header {
+    -webkit-text-stroke: 0.05vw #000000;
+    font-family: Pangram;
+    font-size: 3.75vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #040404;
+}
+.content-hook {
+    margin-top: 6.95vh;
+    font-family: Pangram;
+    font-size: 1.875vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.04vw;
+    color: #000000;
+}
+.content-hook > span {
+    font-family: Pangram-Bold;
+}
+.content-worry {
+    margin-top: 7.4vh;
+    font-size: 2.6vw;
+    font-weight: 800;
+    font-family: Pangram;
+    color: #28a85a;
+}
+.content-covered {
+    font-family: Pangram-Light;
+    font-size: 1.875vw;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+}
+.content-message {
+    margin-top: 4vh;
+    font-family: Pangram;
+    font-size: 1.875vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+}
+.download-buttons {
+    margin-top: 7.77vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding-bottom: 15vh;
+}
+.slide-2-image {
+    margin-top: 13.29vh;
+    margin-left: -21vw;
+}
+.ios {
+    margin-left: 2.65vw;
+}
+/*Slide 2 Images*/
+.Group-19 {
+    width: 17.55vw;
+}
+.Group-18 {
+    width: 17.55vw;
+}
+.Component-1 {
+    width: 57.67vw;
+}
+/*Slide 3*/
+.video-tutorial-block {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.phone-2 {
+    position: relative;
+    margin-top: -10%;
+    margin-left: 5vw;
+}
+.image-10 {
+    width: 29.5vw;
+    min-width: 30vh;
+}
+.play-button {
+    position: absolute;
+    width: 6.875vw;
+    margin-left: -60%;
+    margin-top: 80%;
+}
+.video-tutorial {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: 7.7vw;
+    margin-top: 13.52vh;
+    padding-bottom: 10vh;
+}
+.video-tutorial > .q {
+    -webkit-text-stroke: 1px #ffffff;
+    text-align: right;
+    font-family: Pangram;
+    font-size: 3.75vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+.video-tutorial > .a {
+    margin-top: 6.38vh;
+    text-align: right;
+    font-family: Pangram;
+    font-size: 1.875vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #dbdbdb;
+}
+.video-tutorial > .platform {
+    margin-top: 10.74vh;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+.video-tutorial > .platform > .ios-platform {
+    width: 17.55vw;
+    height: 8.98vh;
+    border-radius: 4.6vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ios-platform > .ios-text {
+    font-family: ProductSans;
+    text-align: center;
+    font-size: 1.25vw;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #8e8e8e;
+}
+.video-tutorial > .platform > .android-platform {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3.44vw;
+}
+.platform > .android-platform > .android-text {
+    margin-top: 3.14vh;
+    font-family: Pangram;
+    font-size: 1.25vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #02c168;
+    padding-left: 0.73vw;
+}
+.text-tutorial {
+    margin-top: 11.01vh;
+    margin-left: 7.81vw;
+    width: 84.37vw;
+    padding-top: 3.8vh;
+    border-radius: 2vw;
+    box-shadow: 0 0.74vh 2.96vh 0 rgba(27, 27, 27, 0.54);
+    background-color: #1b1b1b;
+}
+.text-tutorial > .or {
+    font-family: Pangram;
+    font-size: 1.67vw;
+    padding-left: 4.01vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #006cff;
+}
+.text-tutorial > .header {
+    padding-top: 0.18vh;
+    padding-left: 4vw;
+    -webkit-text-stroke: 0.5px #ffffff;
+    font-family: Pangram;
+    font-size: 2.19vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.07vw;
+    color: #ffffff;
+}
+.text-tutorial > .tutorial {
+    margin-top: 3.8vh;
+    padding-left: 4.01vw;
+    padding-top: 5.19vh;
+    padding-bottom: 6.85vh;
+    border-top : 0.1vh solid #292929;
+    display: flex;
+    flex-direction: row;
+    justify-items: end;
+}
+.indexes-img {
+    width: 3vw;
+}
+.tutorial > .content {
+    padding-left: 2.66vw;
+    padding-right: 8.28vw;
+    font-family: Pangram;
+    font-size: 1.88vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/*Slide 4*/ 
+.slide-4 > .value-content {
+    margin-top: 14.07vh;
+    margin-left: 5.89vw;
+}
+.value-content > .header {
+    -webkit-text-stroke: 1px #000000;
+    font-family: Pangram;
+    font-size: 3.75vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.112vw;
+    color: #000000;
+}
+.value-content > .subtitle {
+    padding-top: 8.33vh;
+    font-family: Pangram;
+    font-size: 2.60vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.06vw;
+    color: #000000;
+}
+.value-content > .value-text {
+    padding-top: 3.7vh;
+    font-family: Pangram;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.06vw;
+    color: #000000;
+    font-size: 1.65vw;
+    letter-spacing: 0.04vw;
+}
+.value-content > .privacy-policy {
+    padding-top: 3.7vh;
+    font-family: ProductSans;
+    font-size: 1.67vw;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.05vw;
+    color: #1365d5;
+}
+.value-shield {
+    position: relative;
+}
+.value-shield > .value-connector {
+    position: absolute;
+    margin-top: 15.51vh;
+    margin-left: -13.02vw;
+}
+.value-connector-img {
+    width: 52vw;
+}
+.value-shield > .value-shield-image {
+    position: absolute;
+    margin-left: 28.38vw;
+    margin-top: 12.96vh;
+    width: 21.1vw;
+}
+/*Slide 5*/
+.faq-phone {
+    position: absolute;
+    margin-top: -8%;
+    margin-left: 5.47vw;
+    width: 27.7vw;
+}
+.slide-5 > .faq-block-1 {
+    padding-top: 10.47vh;
+    margin-left: auto;
+    margin-right: 6.61vw;
+    text-align: right;
+}
+.faq-block-1 > .header {
+    -webkit-text-stroke: 1.5px #ffffff;
+    font-family: Pangram;
+    font-size: 3.75vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.19vw;
+    color: #ffffff;
+}
+.faq-block-1 > .content {
+    margin-top: 10.99vh;
+}
+.faq-container {
+    display: flex;
+    flex-direction: row;
+}
+.faq-1, .faq-2 {
+    justify-content: flex-end;
+}
+.faq-3, .faq-4, .faq-5, .faq-6 {
+    justify-content: flex-start;
+}
+.faq-2 {
+    margin-top: 8.51vh;
+}
+.faq-index-img {
+    width: 2.55vw;
+}
+.faq-text {
+    display: flex;
+    flex-direction: column;
+    padding-right: 2.2vw;
+    padding-left: 2.2vw;
+}
+.faq-text > .faq-q {
+    font-family: Pangram;
+    font-size: 1.875vw;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.06vw;
+    color: #ffffff;
+}
+.faq-text > .faq-a {
+    padding-top: 0.93vh;
+    font-family: Gilroy;
+    font-size: 1.67vw;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.05vw;
+    color: #ffffff;
+}
+.slide-5 > .faq-block-2 {
+    margin-top: 16.85vh;
+    margin-left: 5.41vw;
+}
+.faq-4 {
+    margin-top: 10.2vh;
+}
+.faq-5, .faq-6 {
+    margin-top: 9.7vh;
+}
+/*Slide 6*/
+.slide-6 > .phone-4 {
+    position: absolute;
+    margin-top: -50%;
+    right: 0vw;
+    width: 35.41vw;
+}
+.slide-6 > .header {
+    margin-top: 11.76vh;
+    margin-left: 6.51vw;
+    -webkit-text-stroke: 1px #000000;
+    font-family: Pangram;
+    font-size: 3.75vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.19vw;
+    color: #000000;
+}
+.article-container {
+    margin-top: 9.72vh;
+    width: 99vw;
+}
+.article-container > .article-slides {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: start;
+    overflow: hidden; */
+    padding-bottom: 2.22vh;
+}
+.article-slides > .article {
+    width: 17.91vw;
+    height: 25.87vw;
+    border-radius: 2.22vh;
+    box-shadow: 0 0.41vw 2.22vh 0 rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    margin-left: 4.53vw;
+}
+.swiper-slide {
+    width: 17.91vw;
+    font-size: 1.67vh;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+.article-content > .article-text {
+    padding-left: 1.35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+}
+.article-image {
+    width: 100%;
+}
+.article-text > .article-title {
+    padding-top: 0.5vw;
+    -webkit-text-stroke: 0.3px #000000;
+    font-family: Gilroy;
+    font-size: 1vw;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.04vw;
+    color: #000000;
+}
+.article-text > .article-subtitle {
+    padding-top: 0.54vw;
+    padding-right: 3.07vw;
+    font-family: Gilroy;
+    font-size: 0.84vw;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.025vw;
+    color: #000000;
+}
+.article-text > .article-author {
+    padding-top: 0.76vw;
+    font-family: ProductSans;
+    font-size: 0.73vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: normal;
+    letter-spacing: 0.022vw;
+    color: #ababab;
+}
+.article-container > .article-slide-controller {
+    margin-top: 6.76vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.article-slide-controller > .control {  
+    position: inline !important;
+    color: #000 !important;
+    margin-right: 2.6vw; 
+    width: 5.21vw;
+    height: 5.21vw;
+    border-radius: 2.6vw;
+    font-family: Pangram;
+    border: solid 1px #cfcfcf;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 2.6vw;
+    line-height: 5.2vw;
+}
+
+
+
+
+/*Slide 7*/
+.slide-7-content {
+    border-bottom: #303030 0.05vw solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.address-details {
+    margin-top: 16.95vh;
+    /* margin-left: 4.9vw; */
+    display: flex;
+    flex-direction: column;
+}
+.footer {
+    height: 8.61vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #000;
+}
+.address-heading {
+    -webkit-text-stroke: 0.05vw rgba(255, 255, 255, 0.6);
+    font-family: Pangram;
+    font-size: 1.875vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.1vw;
+    color: rgba(255, 255, 255, 0.6);
+}
+.address-location {
+    margin-top: 2.69vh;
+    font-family: Pangram;
+    font-size: 1.25vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.06vw;
+    color: rgba(242, 242, 242, 0.6);
+}
+.gmap-embed {
+    margin-top: 5.56vh;
+    width: 20.21vw;
+    height: 29.8vh;
+    text-align: center;
+    background-color: #303030;
+}
+.contact-details {
+    /* margin-left: 13.95vw; */
+    padding-top: 16.94vh;
+    /* padding-right: 2.6vw;
+    border-right: #303030 0.05vw solid; */
+}
+.contact-heading {
+    -webkit-text-stroke: 0.05vw rgba(255, 255, 255, 0.6);
+    font-family: Pangram;
+    font-size: 1.875vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.06vw;
+    color: rgba(255, 255, 255, 0.6);
+}
+.contact-message {
+    margin-top: 2.69vh;
+    font-family: Pangram;
+    font-size: 1.25vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 3.24vh;
+    letter-spacing: 0.04vw;
+    color: rgba(225, 225, 225, 0.6);
+}
+.contact-message > span {
+    color: rgba(0, 108, 255, 0.6);
+}
+.fine-print {
+    margin-top: 13.4vh;
+    -webkit-text-stroke: 0.05vw rgba(255, 255, 255, 0.6);
+    font-family: Pangram;
+    font-size: 1.67vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.14vw;
+    color: rgba(255, 255, 255, 0.6);
+}
+.fine-print > .terms > a{
+    -webkit-text-stroke: 0.05vw rgba(255, 255, 255, 0.6);
+    font-family: Pangram;
+    font-size: 1.67vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.14vw;
+    color: rgba(255, 255, 255, 0.6);
+}
+.fine-print > .privacy > a {
+    -webkit-text-stroke: 0.05vw rgba(255, 255, 255, 0.6);
+    font-family: Pangram;
+    font-size: 1.67vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.14vw;
+    color: rgba(255, 255, 255, 0.6);
+}
+.fine-print > .privacy {
+    margin-top: 4.53vh;
+    margin-bottom: 16.67vh;
+}
+.login-placeholder {
+    padding-left: 2.6vw;
+    border-left: #303030 0.05vw solid;
+    padding-top: 15vh;
+    /* margin-left: 4.17vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: relative;
+}
+.login-prompt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.login-prompt > .login-header {
+    text-align: center;
+    font-family: ProductSans;
+    font-size: 1.875vw;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.057vw;
+    color: #ffffff;
+}
+.login-prompt > .login-form {
+    margin-top: 9.08vh;
+    display: flex;
+    flex-direction: column;
+}
+.login-field {
+    padding: 0;
+    border: 0;
+    width: 25vw;
+    height: 5.46vh;
+    border-radius: 0.84vw;
+    background-color: #1d1d1d;
+    font-family: Pangram;
+    font-size: 1vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.03vw;
+    color: #717171;
+    margin-left: auto;
+    margin-right: auto;
+}
+.password-container-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 2.3vw;
+    position: relative;
+    border-radius: 0.84vw;
+}
+.password-container-group > .error-span {
+    opacity: 0;
+    transition: opacity 100ms;
+    position: absolute;
+    right: 1vw;
+    height: 100%;
+}
+.login-prompt > .login-form > .password {
+    margin-top: 3.42vh;
+}
+
+::-webkit-input-placeholder {
+    padding-left: 1.71vw;
+    font-family: Pangram;
+    font-size: 1vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.03vw;
+    color: #717171;
+}
+.login-form > .forgot-password {
+    margin-top: 2.13vh;
+    text-align: right;
+    font-family: ProductSans;
+    font-size: 0.93vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.03vw;
+    color: #6d68e4;
+}
+.login-form > .sign-in {
+    margin-top: 7.13vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.login-prompt > .login-footer {
+    padding-top: 13.33vh;
+    font-family: ProductSans;
+    font-size: 0.833vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.025vw;
+    color: #6a6a6a;
+    text-align: center;
+    padding-bottom: 5vh;
+}
+.sign-in-img {
+    width: 25vw;
+}
+.reset-password-container {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 29.69vw;
+    height: 0px;
+    color: #000;
+    background-color: #ffffff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    transition: all 1s ease-in-out;
+}
+.reset-password-container > .header {
+    margin-top: 8.8vh;
+    text-align: center;
+    font-family: ProductSans;
+    font-size: 1.46vw;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.04vw;
+    color: #000000;
+}
+.reset-password-container > .email-block {
+    margin-top: 4.81vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.email-block > input {
+    border-radius: 2.6vw;
+    background-color: #f2f2f2;
+    width: 21.3vw;
+    height: 5.46vh;
+    border: 0;
+    padding-left: 1.83vw;
+    font-family: Pangram;
+    font-size: 0.84vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.04vw;
+    color: #8a8a8a;
+}
+.email-block > :-ms-input-placeholder {
+    padding-left: 1.3vw;
+    font-family: Pangram;
+    font-size: 0.84vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.025vw;
+    color: #8a8a8a;
+}
+.reset-password-container > .subtitle {
+    margin-top: 3.43vh;
+    text-align: center;
+    font-family: ProductSans;
+    font-size: 0.94vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.03vw;
+    color: #848484;
+}
+.reset-password-container > .reset-button {
+    margin-top: 4.81vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.reset-button > .button-label {
+    text-align: center;
+    padding-top: 1.01vh;
+    font-family: ProductSans;
+    font-size: 0.84vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.025vw;
+    color: #5f26e1;
+}
+.reset-password-container > .reset-successfull {
+    margin-top: 4.82vh;
+    margin-left: auto;
+    margin-right: auto;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.reset-successfull > .reset-footer-img {
+    margin-top: 2.69vh;
+}
+/*Footer*/
+.footer-text {
+    margin-top: 4.42vh;
+    font-family: Pangram;
+    font-size: 0.84vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 100%;
+    letter-spacing: 0.04vw;
+    color: #767676;
+}
+/*Privacy Policy*/
+.back-bar {
+    width: 100%;
+    height: 11.67vh;
+    background-color: #ffffff;
+    border-bottom: 1px solid #c2c2c2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.back-bar > a > .back-home {
+    display: flex;
+    flex-direction: row;
+    padding-left: 2.1vw;
+    font-family: ProductSans;
+    font-size: 1.46vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.04vw;
+    color: #5f26e1;
+}
+.back-home > .back-icon {
+    font-size: 1.57vw;
+    padding-right: 0.52vw;
+    padding-top: 0.1vh;
+    width: 1.35vw;
+    height: 1.35vw;
+    /* background-color: #5f26e1; */
+}
+.policy-content {
+    padding-top: 6.02vh;
+    padding-left: 5.1vw;
+    padding-bottom: 7.5vh;
+    width: 52.31vw;
+    text-align: justify;
+}
+.policy-content > .header {
+    font-family: Pangram;
+    font-size: 2.6vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.08vw;
+    color: #000000;
+}
+.policy-content > .introduction {
+    margin-top: 4.81vh;
+    font-family: Helvetica;
+    font-size: 1.04vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.03vw;
+    color: #000000;
+}
+.policy-content > .section {
+    padding-top: 8.24vh;
+    font-family: Helvetica;
+    font-size: 1.04vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.03vw;
+    color: #000000;
+}
+.policy-content > .section > .section-title {
+    font-family: Montserrat;
+    font-size: 1.25vw;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: 0.04vw;
+    color: #000000;
+}
+.policy-content > .section > .section-content > p > span {
+    font-weight: bold;
+}
+#email {
+    font-family: Pangram;
+    color: #1365d5;
+}
+#may {
+    font-weight: bold;
+    font-style: oblique;
+}
+.policy-footer {
+    height: 28.24vh;
+    padding-left: 5.1vw;
+    border-top: 1px solid #d8d8d8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.policy-footer > .content {
+    font-family: Pangram;
+    font-size: 1.4vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.11;
+    letter-spacing: 0.04vw;
+    color: #3a3a3a;
+}
+.tos-footer {
+    width: 98vw;
+    border-top: 1px solid #d8d8d8;
+}
+.tos-footer > .tos-footer-content {
+    padding-left: 5.104vw;
+    padding-top: 7.78vh;
+    padding-bottom: 14.54vh;
+    width: 52.14vw;
+    font-family: Helvetica;
+    font-size: 1.04vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: oblique;
+    line-height: 1.5;
+    letter-spacing: 0.03vw;
+    color: #000000;
+}
+
+.tos-footer-content > .header {
+    font-weight: bold;
+}
+.tos-footer-content > .header-2 {
+    padding-top: 4.63vh;
+}
