@@ -34,18 +34,30 @@
     font-family: Helvetica;
     src: url("../vendor/fonts/Helvetica/helvetica.ttf")
 }
+.hidden {
+    height: 0;
+}
 html, body {
     margin: 0;
     padding: 0;
     border: 0;
     scroll-behavior: smooth;
     box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
 }
 .container {
-    width: 99vw;
+    width: 100vw;
 }
 a {
     text-decoration: none;
+}
+object {
+    pointer-events: none;
+    cursor: pointer;
 }
 .slide-1 {
     min-height: fit-content;
@@ -151,6 +163,7 @@ a {
 .logo {
     display: flex;
     flex-direction: row;
+    width: 10vw;
     margin-left: 2.55vw;
 }
 .logo-text {
@@ -163,6 +176,9 @@ a {
     line-height: normal;
     letter-spacing: normal;
     color: #ffffff;
+}
+.logo-img {
+    height: 100%;
 }
 .home {
     margin-left: 7.08vw;
@@ -344,8 +360,8 @@ a {
 .play-button {
     position: absolute;
     width: 6.875vw;
-    margin-left: -60%;
-    margin-top: 80%;
+    margin-left: -33%;
+    margin-top: 40%;
 }
 .video-tutorial {
     display: flex;
@@ -386,6 +402,7 @@ a {
     margin-left: auto;
 }
 .video-tutorial > .platform > .ios-platform {
+    cursor: pointer;
     width: 17.55vw;
     height: 8.98vh;
     border-radius: 4.6vh;
@@ -406,6 +423,7 @@ a {
     color: #8e8e8e;
 }
 .video-tutorial > .platform > .android-platform {
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     margin-left: 3.44vw;
@@ -531,6 +549,8 @@ a {
     font-style: normal;
     line-height: normal;
     letter-spacing: 0.05vw;
+}
+.value-content > .privacy-policy > a {
     color: #1365d5;
 }
 .value-shield {
@@ -655,19 +675,20 @@ a {
     width: 99vw;
 }
 .article-container > .article-slides {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: start;
-    overflow: hidden; */
     padding-bottom: 2.22vh;
 }
 .article-slides > .article {
+    cursor: pointer;
     width: 17.91vw;
     height: 25.87vw;
     border-radius: 2.22vh;
     box-shadow: 0 0.41vw 2.22vh 0 rgba(0, 0, 0, 0.15);
     background-color: #ffffff;
     margin-left: 4.53vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 .swiper-slide {
     width: 17.91vw;
@@ -687,18 +708,33 @@ a {
     -webkit-align-items: center;
     align-items: center;
   }
-.article-content > .article-text {
-    padding-left: 1.35vw;
+.article-content {
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-
+    overflow: hidden;
 }
 .article-image {
     width: 100%;
+    height: 100%;
+    border-top-left-radius: 2.22vh;
+    border-top-right-radius: 2.22vh;
+}
+.article-content > .article-img {
+    height: 50%;
+    object-fit: contain;
+}
+
+.article-content > .article-text {
+    height: 50%;
+    padding-left: 1.35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
 }
 .article-text > .article-title {
-    padding-top: 0.5vw;
+    padding-right: 0.5vw;
     -webkit-text-stroke: 0.3px #000000;
     font-family: Gilroy;
     font-size: 1vw;
@@ -710,7 +746,6 @@ a {
     color: #000000;
 }
 .article-text > .article-subtitle {
-    padding-top: 0.54vw;
     padding-right: 3.07vw;
     font-family: Gilroy;
     font-size: 0.84vw;
@@ -722,7 +757,6 @@ a {
     color: #000000;
 }
 .article-text > .article-author {
-    padding-top: 0.76vw;
     font-family: ProductSans;
     font-size: 0.73vw;
     font-weight: normal;
@@ -739,6 +773,7 @@ a {
     justify-content: center;
 }
 .article-slide-controller > .control {  
+    cursor: pointer;
     position: inline !important;
     color: #000 !important;
     margin-right: 2.6vw; 
@@ -954,6 +989,7 @@ a {
     color: #717171;
 }
 .login-form > .forgot-password {
+    cursor: pointer;
     margin-top: 2.13vh;
     text-align: right;
     font-family: ProductSans;
@@ -984,6 +1020,7 @@ a {
     padding-bottom: 5vh;
 }
 .sign-in-img {
+    cursor: pointer;
     width: 25vw;
 }
 .reset-password-container {
@@ -1019,6 +1056,7 @@ a {
     margin-right: auto;
 }
 .email-block > input {
+    padding-left: 1.3vw;
     border-radius: 2.6vw;
     background-color: #f2f2f2;
     width: 21.3vw;
@@ -1058,6 +1096,7 @@ a {
     color: #848484;
 }
 .reset-password-container > .reset-button {
+    cursor: pointer;
     margin-top: 4.81vh;
     margin-left: auto;
     margin-right: auto;

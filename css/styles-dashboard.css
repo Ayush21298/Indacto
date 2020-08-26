@@ -1,0 +1,506 @@
+@font-face {
+    font-family: Raleway;
+    src: url("../vendor/fonts/Raleway/Raleway-Bold.ttf");
+}
+@font-face {
+    font-family: Pangram;
+    src: url("../vendor/fonts/Pangram/Pangram-Regular.otf");
+}
+@font-face {
+    font-family: Pangram-Light;
+    src: url("../vendor/fonts/Pangram/Pangram-Light.otf");
+}
+@font-face {
+    font-family: Pangram-Bold;
+    src: url("../vendor/fonts/Pangram/Pangram-Black.otf");
+}
+@font-face {
+    font-family: Pangram-ExtraLight;
+    src: url("../vendor/fonts/Pangram/Pangram-ExtraLight.otf");
+}
+@font-face {
+    font-family: ProductSans;
+    src: url("../vendor/fonts/ProductSans/ProductSans-Regular.ttf");
+}
+@font-face {
+    font-family: Gilroy;
+    src: url("../vendor/fonts/Gilroy/Gilroy-Light.otf");
+}
+@font-face {
+    font-family: Montserrat;
+    src: url("../vendor/fonts/Montserrat/Montserrat-Medium.ttf");
+}
+@font-face {
+    font-family: Helvetica;
+    src: url("../vendor/fonts/Helvetica/helvetica.ttf");
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: #1d1d1d;
+}
+.container {
+    width: 100vw;
+    color: #fff;
+}
+a {
+    text-decoration: none;
+}
+object {
+    pointer-events: none;
+    cursor: pointer;
+}
+/* 1. Navigation Bar*/
+.nav-bar {
+    top: 0;
+    height: 9.9vh;
+    border-bottom: #303030 0.05vw solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #1d1d1d;
+    width: 100%;
+    z-index: 3;
+}
+.nav-bar > a > .back-home {
+    padding-top: 3.4vh;
+    display: flex;
+    flex-direction: row;
+    padding-left: 2.1vw;
+    font-family: ProductSans;
+    font-size: 1.46vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.04vw;
+    color: #5f26e1;
+}
+.back-home > .back-icon {
+    font-size: 1.57vw;
+    padding-right: 0.52vw;
+    padding-top: 0.1vh;
+    width: 1.35vw;
+    height: 1.35vw;
+    /* background-color: #5f26e1; */
+}
+.nav-bar > .indacto-logo {
+    border-left: 1px solid #fff; 
+    width: 25%;
+    text-align: left;
+    padding-left: 1.77vw;
+    padding-top: 30px;
+    opacity: 0.1;
+    font-family: Raleway;
+    font-size: 2.77vh;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+/* 2. Employee Block*/
+.employee-block {
+    height: 92.6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+/* 2.a. Dashboard */
+.dashboard-container {
+    max-width: 70vw;
+    padding-top: 4.72vh;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-left: 2.55vw;
+}
+.dashboard-container > .header-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.dashboard-container > .header-row > .header {
+    -webkit-text-stroke: 1px #ffffff;
+    font-family: Pangram-Light;
+    font-size: 1.89vw;
+    font-weight: 200;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 2.1px;
+    color: #ffffff;
+}
+.dashboard-container > .header-row > .header > span {
+    font-family: Pangram;
+}
+.dashboard-container > .header-row > .rates {
+    display: flex;
+    flex-direction: row;
+    padding-right: 2.34vw;
+    font-family: Pangram;
+    font-size: 0.83vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    color: #747474;
+}
+.dashboard-container > .header-row > .rates > .rate-fields > .rate-field {
+    text-align: right;
+}
+.dashboard-container > .header-row > .rates > .rate-values > .rate-value {
+    padding-left: 1.93vw;
+}
+.dashboard-container > .table-container {
+    text-align: center;
+    width: 98%;
+    height: auto;
+    /* height: 725px; */
+    margin-top: 4.81vh;
+    background-color: #242424;
+}
+.tabulator {
+    border: 0 !important;
+}
+.tabulator-headers {
+    /* height: 8.52vh; */
+    color: #ffffff;
+    min-height: fit-content;
+}
+.tabulator-header-filter {
+    margin-left: auto;
+    margin-right: auto;
+}
+.tabulator-header-filter > input {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: Pangram;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.022vw;
+    color: rgb(252, 255, 126);
+    background-color: #242424;
+}
+.tabulator-header-filter > ::-webkit-input-placeholder {
+    text-align: center !important;
+    font-family: Pangram;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.022vw;
+    color: rgb(252, 255, 126);
+}
+.tabulator-col {
+    height: 100%;
+    border-right: 1px solid #2a2a2a !important;
+}
+.tabulator-col-content {
+    height: 100%;
+    text-align: center;
+    background-color:#242424;
+    font-family: Pangram;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    color: #ffffff;
+}
+.tabulator-arrow {
+    display: none !important;
+}
+.tabulator-col-title {
+    padding-top: 3.52vh;
+    text-align: center !important;
+    padding-left: 1.04vw !important;
+    padding-right: 1.04vw !important;
+}
+.tabulator-header {
+    border-bottom: 1px solid #2a2a2a !important;
+}
+.tabulator-row > .tabulator-cell {
+    cursor: initial !important;
+    background-color: #242424 !important;
+    padding-top: 1.76vh !important;
+    padding-bottom: 2.78vh !important;
+    border-right: 1px solid #2a2a2a !important;
+    /* opacity: 0.6; */
+    font-family: Pangram;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    color: #cac6c6;
+}
+.tabulator-footer {
+    display: none !important;
+}
+::-webkit-scrollbar {
+    /* width: 0px;   */
+    background: transparent; 
+}
+.tabulator-paginator {
+    display: none !important;
+}
+.table-footer {
+    height: 8.52vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-top: 1px solid #2a2a2a;
+}
+.table-footer > .download-xls {
+    cursor: pointer;
+    margin-left: 3.75vw;
+    padding-top: 3.7vh;
+    font-family: Pangram;
+    font-size: 0.84vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    color: #64afff;
+}
+.table-footer > .pagination-block {
+    margin-left: 18.23vw;
+    padding-top: 3.7vh;
+    display: flex;
+    flex-direction: row;
+    font-family: Pangram;
+    font-size: 0.84vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    color: #717171;
+}
+.table-footer > .pagination-block > .prev {
+    cursor: pointer;
+    padding-right: 1.56vw;
+    
+}
+.table-footer > .pagination-block > .next {
+    cursor: pointer;
+    padding-left: 1.56vw;
+}
+.table-footer > .total-revenue {
+    margin-left: 15.26vw;
+    display: flex;
+    flex-direction: row;
+    padding-top: 3.7vh;
+    font-family: Pangram;
+    font-size: 1.04vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.03vw;
+    color: #28a85a;
+}
+.table-footer > .total-revenue > .field-name {
+    padding-right: 0.26vw;
+}
+.save-button {  
+    cursor: pointer;
+    line-height: 4vh;
+    margin-top: 2.5vh;
+    height: 50%;
+    margin-left: 2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border-radius: 1vw;
+    font-size: 16px;
+    font-family: Pangram;
+    background-color: #5f26e1;
+
+}
+
+/* 2.b. Account Management*/
+.update-password-img {
+    width: 6.4vw;
+}
+.logout-btn-img {
+    width: 20.83vw;
+}
+.account-management-container {
+    width: 25%;
+    padding-left: 1.77vw;
+    border-left: 1px solid #303030;
+}
+.password-change-container {
+    margin-top: 4.72vh;
+    padding-bottom: 4.16vh;
+}
+.password-change-container > .header {
+    font-family: Pangram;
+    font-size: 1.25vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.72px;
+    color: #b9b9b9;
+}
+.password-change-container > .password-form {
+    padding-top: 2.87vh;
+    display: flex;
+    flex-direction: column;
+}
+.password-change-container > .password-form > .password-field {
+    width: 20.83vw;
+    height: 3.89vh;
+    margin-bottom: 1.67vh;
+    border-radius: 1.67vh;
+    background-color: #242424;
+    border: 0;
+    padding: 0;  
+}
+.password-change-container > .password-form > input {
+    padding-left: 0.94vw;
+    font-family: Pangram;
+    font-size: 0.94vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    color: #fff;
+}
+.password-change-container > .password-form > .password-field::placeholder {
+    padding-left: 0.94vw;
+    font-family: Pangram;
+    font-size: 0.73vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    color: #494949;
+}
+.password-form > .update-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.update-block > input {
+    width: 13.69vw;
+    height: 3.88vh;  
+    margin-bottom: 1.67vh;
+    border-radius: 1.67vh;
+    background-color: #242424;
+    border: 0;
+    padding: 0; 
+    color: #fff;
+}
+.update-block > input::placeholder {
+    padding-left: 0.94vw;
+    font-family: Pangram;
+    font-size: 0.73vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    color: #494949;
+}
+.update-block > .update-btn {
+    cursor: pointer;
+    margin-left: 0.47vw;
+}
+.account-management-container > .divider {
+    height: 0;
+    border: 1px solid #303030;
+    width: 20.83vw;
+}
+.logout {
+    cursor: pointer;
+    margin-top: 3.98vh;
+    /* border-top: 1px solid #303030; */
+}
+/* 3. Admin Block */
+.admin-block {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10%;
+}
+.employee-table-container {
+    display: flex;
+    flex-direction: column;
+    width: 68.75vw;
+    /* min-height: fit-content;
+    height: 889px; */
+    margin-left: 2.55vw;
+    background-color: #242424;
+}
+.employee-table-container > .header {
+    padding-left: 2.5vw;
+    padding-top: 4.53vh;
+    padding-right: 2.34vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.employee-table-container > .header > .title-block > .title {
+    font-family: ProductSans;
+    font-size: 2.19vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.11vw;
+    color: #ffffff;
+}
+.employee-table-container > .header > .title-block > .subtitle {
+    padding-top: 1.2vh;
+    font-family: Pangram;
+    font-size: 0.84vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.54px;
+    color: #4e4e4e;
+}
+.add-employee-btn {
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+}
+.employee-table-container > .body {
+    margin-top: 8.43vh;
+    margin-left: 2.14vw;
+}
+.tabulator-editing {
+    border: 0 !important;
+}
+.tabulator-editing > input {
+    border: 0 !important;
+    font-family: Pangram;
+    font-size: 0.73vw;
+    text-align: center;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    color: #cac6c6;
+}

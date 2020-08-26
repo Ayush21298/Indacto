@@ -3,10 +3,10 @@
 <head>
 	<meta name="viewport" content="initial-scale=1.0, width=device-width">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css"> -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>Indacto</title>
 </head>
 <body>
@@ -51,11 +51,13 @@
                     Contact Us
                 </div>
             </a>
-            <div class="login nav-item">
-                <div class="login-text">
-                    Employee Login
+            <a href="#contact">
+                <div class="login nav-item">
+                    <div class="login-text">
+                        Employee Login
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
         <div class="title-container">
             <div class="title">Welcome to <span>Indacto</span></div>
@@ -84,12 +86,12 @@
                 from your previous phone<br>                
             </div>
             <div class="download-buttons">
-                <div class="android">
+<!--                 <div class="android">
                     <img src="img/group-19.png" srcset="img/group-19@2x.png 2x,img/group-19@3x.png 3x"  class="Group-19">
                 </div>
                 <div class="ios">
                     <img src="img/group-18.png" srcset="img/group-18@2x.png 2x,img/group-18@3x.png 3x"  class="Group-18">
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="slide-2-image">
@@ -99,7 +101,8 @@
     <div class="container slide-3" id="how-to">
         <div class="video-tutorial-block">
             <div class="phone-2">
-                <img src="img/image-10.png" srcset="img/image-10@2x.png 2x,img/image-10@3x.png 3x" class="image-10">
+                <video src="iOS.mp4" class="image-10 hidden" id="tutorial-video" controls></video>
+                <img src="img/image-10.png" srcset="img/image-10@2x.png 2x,img/image-10@3x.png 3x" class="image-10" id="tutorial-phone">
                 <img src="img/play-button.png" srcset="img/play-button.png@2x.png 2x,img/play-button@3x.png 3x" class="play-button">
             </div> 
             <div class="video-tutorial">
@@ -112,16 +115,16 @@
                 </div>
                 <div class="platform">
                     <div class="ios-platform">
-                        <div class="ios-text">Play iOS Tutorial</div>
+                        <div class="ios-text" id="ios-tutorial-play">Tutorial coming soon...</div>
                     </div>
-                    <div class="android-platform">
+<!--                     <div class="android-platform">
                         <object class="android-img" data="img/mdi-android.svg" type="image/svg+xml">
                             <img src="img/mdi-android.png" srcset="img/mdi-android@2x.png 2x, img/mdi-android@3x.png 3x" class="android-img">
                         </object>
                         <div class="android-text">
                             Play for Android
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -138,10 +141,11 @@
                 </div>
                 <div class="content">
                     <div class="step-1">
-                        Enter your WhatsApp number and validate with OTP
+                        Enter your number and validate with OTP
                     </div>
                     <div class="step-2">
-                        Sign into your Google Drive (restoring from 
+                    		Connect your Android device as well as iPhone to your laptop with USB Cable.
+<!--                         Sign into your Google Drive (restoring from 
                         <span>
                             <object class="android-img" data="img/mdi-android.svg" type="image/svg+xml">
                                 <img src="img/mdi-android.png" srcset="img/mdi-android@2x.png 2x, img/mdi-android@3x.png 3x" class="android-img">
@@ -150,10 +154,10 @@
                             <object class="apple-img" data="img/mdi-apple.svg" type="image/svg+xml">
                                 <img src="img/mdi-apple.png" srcset="img/mdi-apple@2x.png 2x, img/mdi-apple@3x.png 3x" class="apple-img">
                             </object>
-                        </span> )
+                        </span> ) -->
                     </div>
                     <div class="step-3">
-                        Pay Rs. 459
+                        Press Start and wait for the process to complete.
                     </div>
                 </div>
             </div>
@@ -177,7 +181,9 @@
                 while providing services to our customers.
             </div>
             <div class="privacy-policy">
-                Privacy Policy
+                <a href="privacy-policy.html">
+                    Privacy Policy
+                </a>
             </div>
         </div>
         <div class="value-shield">
@@ -196,8 +202,8 @@
             <div class="content">
                 <div class="faq-1 faq-container">
                     <div class="faq-text">
-                        <div class="faq-q">Do I need to have SIM for the number for<br> which I am restoring my WhatsApp data?</div>
-                        <div class="faq-a">Yes. Because we send you an OTP on that number</div>
+                        <div class="faq-q">How do I turn on USB debugging?</div>
+                        <div class="faq-a">Click Here to know about it.</div>
                     </div>
                     <div class="faq-img">
                         <object class="faq-index-img" data="img/faq-index-1.svg" type="image/svg+xml">
@@ -226,9 +232,8 @@
                     </object>
                 </div>
                 <div class="faq-text">
-                    <div class="faq-q">Are there pre-requisite conditions for this app to <br>work?</div>
-                    <div class="faq-a">We don’t ask much.<br>
-                        Just that you must have an at least _ Android version if <br>using Android app. And at least _ iOS if using iOS app. Also,<br> be sure that whatever data you want to restore is backed <br>up on your iCloud or Google Drive.</div>
+                    <div class="faq-q">Do I need to have SIM for the number for<br> which I am restoring my WhatsApp data?</div>
+                    <div class="faq-a">We need your phone number for OTP validation.<br> So any SIM that belongs to you will do the <br>job - not neccessarilly your WhatsApp Number SIM.</div>
                 </div>
             </div>
             <div class="faq-4 faq-container">
@@ -240,7 +245,7 @@
                 <div class="faq-text faq-container">
                     <div class="faq-q">Can I restore WhatsApp backup from my previous<br> phone even after using WhatsApp on new phone<br> for some time?</div>
                     <div class="faq-a">
-                        Yes. That’s the beauty of it. Just make sure that you meet all<br> the pre-requisite conditions mentioned in above answer
+                        Yes. That’s the beauty of it.
                     </div>
                 </div>
             </div>
@@ -283,7 +288,7 @@
         </div>
         <div class="article-container swiper-container">
             <div class="article-slides swiper-wrapper">
-                <div class="article swiper-slide">
+                <!-- <div class="article swiper-slide">
                     <div class="article-content">
                         <div class="article-img">
                             <img src="img/article-picture.png" class="article-image">
@@ -300,140 +305,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="article swiper-slide">
-                    <div class="article-content">
-                        <div class="article-img">
-                            <img src="img/article-picture.png" class="article-image">
-                        </div>
-                        <div class="article-text">
-                            <div class="article-title">
-                                How to Backup and Restore your WhatsApp Data in Android?
-                            </div>
-                            <div class="article-subtitle">
-                                This article is about <br> Lorem ipsum dolor sit amet
-                            </div>
-                            <div class="article-author">
-                                Fyodor Turgenev
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="article swiper-slide">
-                    <div class="article-content">
-                        <div class="article-img">
-                            <img src="img/article-picture.png" class="article-image">
-                        </div>
-                        <div class="article-text">
-                            <div class="article-title">
-                                How to Backup and Restore your WhatsApp Data in iPhone
-                            </div>
-                            <div class="article-subtitle">
-                                This article is about <br> Lorem ipsum dolor sit amet
-                            </div>
-                            <div class="article-author">
-                                Fyodor Turgenev
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="article swiper-slide">
-                    <div class="article-content">
-                        <div class="article-img">
-                            <img src="img/article-picture.png" class="article-image">
-                        </div>
-                        <div class="article-text">
-                            <div class="article-title">
-                                Setting up new iPhone from Android phone
-                            </div>
-                            <div class="article-subtitle">
-                                This article is about <br> Lorem ipsum dolor sit amet
-                            </div>
-                            <div class="article-author">
-                                Fyodor Turgenev
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="article swiper-slide">
-                    <div class="article-content">
-                        <div class="article-img">
-                            <img src="img/article-picture.png" class="article-image">
-                        </div>
-                        <div class="article-text">
-                            <div class="article-title">
-                                Setting up new Android phone from iPhone
-                            </div>
-                            <div class="article-subtitle">
-                                This article is about <br> Lorem ipsum dolor sit amet.
-                            </div>
-                            <div class="article-author">
-                                Fyodor Turgenev
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="article swiper-slide">
-                    <div class="article-content">
-                        <div class="article-img">
-                            <img src="img/article-picture.png" class="article-image">
-                        </div>
-                        <div class="article-text">
-                            <div class="article-title">
-                                Welcome to Indacto
-                            </div>
-                            <div class="article-subtitle">
-                                This article is about <br> Lorem ipsum dolor sit amet
-                            </div>
-                            <div class="article-author">
-                                Fyodor Turgenev
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="article swiper-slide">
-                    <div class="article-content">
-                        <div class="article-img">
-                            <img src="img/article-picture.png" class="article-image">
-                        </div>
-                        <div class="article-text">
-                            <div class="article-title">
-                                Welcome to Indacto
-                            </div>
-                            <div class="article-subtitle">
-                                This article is about <br> Lorem ipsum dolor sit amet
-                            </div>
-                            <div class="article-author">
-                                Fyodor Turgenev
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="article swiper-slide">
-                    <div class="article-content">
-                        <div class="article-img">
-                            <img src="img/article-picture.png" class="article-image">
-                        </div>
-                        <div class="article-text">
-                            <div class="article-title">
-                                Welcome to Indacto
-                            </div>
-                            <div class="article-subtitle">
-                                This article is about <br> Lorem ipsum dolor sit amet
-                            </div>
-                            <div class="article-author">
-                                Fyodor Turgenev
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </div> -->
             </div>
             <div class="article-slide-controller">
                 <div class="control button-prev"><</div>
@@ -482,14 +354,14 @@
                     <div class="login-form">
                         <input type="text" class="username login-field" placeholder="Username">
                         <div class="password-container-group password">
-                            <input type="password" placeholder="Password" class="login-field">
+                            <input type="password" placeholder="Password" class="login-field password-input">
                             <span class="error-span">
                                 <object class="invalid-img" data="img/invalid-password.svg" type="image/svg+xml">
                                     <img src="img/invalid-password.png" />
                                 </object>
                             </span>
                         </div>
-                        <div class="forgot-password" onclick="()=> showForgotPassword();">forgot password?</div>
+                        <div class="forgot-password" onclick="showForgotPassword()">forgot password?</div>
                         <div class="sign-in">
                             <img src="img/sign-in-button.svg" class="sign-in-img">
                         </div>
